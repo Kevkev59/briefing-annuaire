@@ -1,1 +1,17 @@
-<p>Card works!</p>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src={{Client.photo}} class="img-fluid rounded-start" alt="img2">
+    </div>
+
+    <div class="col-md-8">
+      <li class="card-body">
+        <h5 class="card-title">{{Client.firstname}} {{Client.secondname}}</h5>
+          <h6 [ngClass]="{red:Client.typeClient,green:!Client.typeClient}">{{Client.type}}</h6>
+          <a routerLink="#">Voir le détail</a>
+            <!-- <p class="card-text"><b>n° </b>{{Client.phone}}</p>
+            <p class="card-text"><small class="text-body-secondary"><b>Adresse: </b>{{Client.adresse}}</small></p> -->
+      </li>
+    </div>
+  </div>
+</div>

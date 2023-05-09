@@ -3,6 +3,9 @@ export class ClientClass {
     secondname!:string;
     adresse!:string;
     phone!:string;
-    type!:boolean;
+    type!:string;
+    typeClient!:boolean;
     id!:number;
+    photo!:string;
 }
+

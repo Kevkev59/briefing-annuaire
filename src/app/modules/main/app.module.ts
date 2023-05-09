@@ -4,6 +4,7 @@ import { AppComponent } from './component/main/app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AnnuaireModule } from '../annuaire/annuaire.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -13,9 +14,11 @@ import { AnnuaireModule } from '../annuaire/annuaire.module';
     HeaderComponent,
     FooterComponent
   ],
+
   imports: [
     BrowserModule,
-    AnnuaireModule
+    AnnuaireModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
